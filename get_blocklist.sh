@@ -3,7 +3,7 @@
 ####################################################################
 # License                                                          #
 ####################################################################
-# get_blocklist.sh is a bash function to to download a blocklist
+# get_blocklist.sh is a bash function to download a blocklist
 # Copyright (C) 2018 Paul Henderson<phenderson643@gmail.com>
 #
 # This program is free software:
