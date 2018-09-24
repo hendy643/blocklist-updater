@@ -4,7 +4,7 @@
 # License                                                          #
 ####################################################################
 # get_blocklist.sh is a bash function to download a blocklist
-# Copyright (C) 2018 Paul Henderson<phenderson643@gmail.com>
+# Copyright (C) 2018 wompus<wompus@codeintheholegames.com>
 #
 # This program is free software:
 # you can redistribute it and/or modify it under the terms of the
