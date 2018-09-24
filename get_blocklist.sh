@@ -43,7 +43,7 @@ configFile="$(eval echo ~$USER)/.config/qBittorrent/qBittorrent.conf"
 ####################################################################
 echo "Carrying out preinstall prep"
 if [[ ! -e $dir ]]; then
-  mkdir $dir
+  mkdir -p $dir
   if [[ ! -e $dir ]]; then
     echo "$dir created"
   else
@@ -77,7 +77,7 @@ echo "Target dir: $(echo $dir | tr -d '\r')"
 
 echo "\r Downloading blocklist"
 # download the file
-curl  -o $tempFile $listSource
+curl -o $tempFile $listSource
 
 # compare new file to old file and replace
 if [[ -e $outfile ]]; then
@@ -100,4 +100,4 @@ echo "extracting list"
 gunzip -fv blocklist.p2p.gz
 echo "extraction complete"
 
-echo "\r\rNow point your qbittorent block list to $outfile"
+echo "\r\rNow point your qbittorent block list to $dir/blocklist.p2p"
